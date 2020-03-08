@@ -40,3 +40,39 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+let navLinks = document.getElementsByTagName("a");
+// console.log(navLinks);
+
+// console.log(navLinks[0]);
+
+navLinks[0].textContent = siteContent["nav"]["nav-item-1"];
+navLinks[1].textContent = siteContent["nav"]["nav-item-2"];
+navLinks[2].textContent = siteContent["nav"]["nav-item-3"];
+navLinks[3].textContent = siteContent["nav"]["nav-item-4"];
+navLinks[4].textContent = siteContent["nav"]["nav-item-5"];
+navLinks[5].textContent = siteContent["nav"]["nav-item-6"];
+
+let ctaH1 = document.querySelector("h1").textContent = siteContent["cta"]["h1"]; 
+// ctaTextH1[0].textContent = siteContent["cta"]["h1"];
+
+// console.log(document.querySelector("button"));
+
+let ctaButton = document.querySelector("button").textContent = siteContent["cta"]["button"];
+
+let topConTextConH4 = document.getElementsByTagName("h4")[0].textContent = siteContent["main-content"]["features-h4"];
+let topConTextConP = document.getElementsByTagName("p")[0].textContent = siteContent["main-content"]["features-content"];
+let topConTextConAboutH4 = document.getElementsByTagName("h4")[1].textContent = siteContent["main-content"]["about-h4"];
+let topConTextConAboutP = document.getElementsByTagName("p")[1].textContent = siteContent["main-content"]["about-content"];
+
+let middleIMG = document.getElementById("middle-img");
+middleIMG.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+console.log(document.querySelectorAll(".text-content"));
+
+let servicesConH4 = document.querySelectorAll(".text-content")[2].firstElementChild.textContent = siteContent["main-content"]["services-h4"];
+let servicesConP = document.querySelectorAll(".text-content")[2].lastElementChild.textContent = siteContent["main-content"]["services-content"];
+let productConH4 = document.querySelectorAll(".text-content")[3].firstElementChild.textContent = siteContent["main-content"]["product-h4"];
+let productConP = document.querySelectorAll(".text-content")[3].lastElementChild.textContent = siteContent["main-content"]["product-content"];
+let visionConH4 = document.querySelectorAll(".text-content")[4].firstElementChild.textContent = siteContent["main-content"]["vision-h4"];
+let visionConP = document.querySelectorAll(".text-content")[4].lastElementChild.textContent = siteContent["main-content"]["vision-content"];
