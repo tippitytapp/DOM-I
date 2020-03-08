@@ -41,7 +41,10 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
+// nav links info
 let navLinks = document.getElementsByTagName("a");
+
+
 // console.log(navLinks);
 
 // console.log(navLinks[0]);
@@ -58,17 +61,25 @@ let ctaH1 = document.querySelector("h1").textContent = siteContent["cta"]["h1"];
 
 // console.log(document.querySelector("button"));
 
+// button information
 let ctaButton = document.querySelector("button").textContent = siteContent["cta"]["button"];
 
+// cta image information
+let ctaIMG = document.getElementById("cta-img");
+ctaIMG.setAttribute("src", siteContent["cta"]["img-src"]);
+
+// top-content information
 let topConTextConH4 = document.getElementsByTagName("h4")[0].textContent = siteContent["main-content"]["features-h4"];
 let topConTextConP = document.getElementsByTagName("p")[0].textContent = siteContent["main-content"]["features-content"];
 let topConTextConAboutH4 = document.getElementsByTagName("h4")[1].textContent = siteContent["main-content"]["about-h4"];
 let topConTextConAboutP = document.getElementsByTagName("p")[1].textContent = siteContent["main-content"]["about-content"];
 
+// middle image source
 let middleIMG = document.getElementById("middle-img");
 middleIMG.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 
-console.log(document.querySelectorAll(".text-content"));
+// bottom-content infomation
+// console.log(document.querySelectorAll(".text-content"));
 
 let servicesConH4 = document.querySelectorAll(".text-content")[2].firstElementChild.textContent = siteContent["main-content"]["services-h4"];
 let servicesConP = document.querySelectorAll(".text-content")[2].lastElementChild.textContent = siteContent["main-content"]["services-content"];
@@ -76,3 +87,24 @@ let productConH4 = document.querySelectorAll(".text-content")[3].firstElementChi
 let productConP = document.querySelectorAll(".text-content")[3].lastElementChild.textContent = siteContent["main-content"]["product-content"];
 let visionConH4 = document.querySelectorAll(".text-content")[4].firstElementChild.textContent = siteContent["main-content"]["vision-h4"];
 let visionConP = document.querySelectorAll(".text-content")[4].lastElementChild.textContent = siteContent["main-content"]["vision-content"];
+
+//contact question information
+// console.log(document.querySelectorAll(".contact"));
+let contactH4 = document.querySelectorAll(".contact")[0].firstElementChild.textContent = siteContent["contact"]["contact-h4"];
+let contactAddress = document.querySelectorAll(".contact")[0].children[1].textContent = siteContent["contact"]["address"];
+let contactPhone = document.querySelectorAll(".contact")[0].children[2].textContent = siteContent["contact"]["phone"];
+let contactEmail = document.querySelectorAll(".contact")[0].children[3].textContent = siteContent["contact"]["email"];
+
+//footer information
+// console.log(document.getElementsByTagName("footer"));
+let footer = document.getElementsByTagName("footer")[0].firstElementChild;
+footer.textContent = siteContent["footer"]["copyright"];
+
+let navLinksColorChanging = document.querySelectorAll("a");
+navLinksColorChanging[0].style.color = "green";
+navLinksColorChanging[1].style.color = "green";
+navLinksColorChanging[2].style.color = "green";
+navLinksColorChanging[3].style.color = "green";
+navLinksColorChanging[4].style.color = "green";
+navLinksColorChanging[5].style.color = "green";
+// console.log(navLinksColorChanging);
