@@ -101,11 +101,29 @@ let footer = document.getElementsByTagName("footer")[0].firstElementChild;
 footer.textContent = siteContent["footer"]["copyright"];
 
 let navLinksColorChanging = document.querySelectorAll("a");
-navLinksColorChanging[0].style.color = "green";
-navLinksColorChanging[1].style.color = "green";
-navLinksColorChanging[2].style.color = "green";
-navLinksColorChanging[3].style.color = "green";
-navLinksColorChanging[4].style.color = "green";
-navLinksColorChanging[5].style.color = "green";
-console.log(navLinksColorChanging);
-// navLinksColorChanging.style.color = "green";
+// navLinksColorChanging[0].style.color = "green";
+// navLinksColorChanging[1].style.color = "green";
+// navLinksColorChanging[2].style.color = "green";
+// navLinksColorChanging[3].style.color = "green";
+// navLinksColorChanging[4].style.color = "green";
+// navLinksColorChanging[5].style.color = "green";
+// console.log(navLinksColorChanging);
+navLinksColorChanging.forEach(element => {element.style.color = "green"});
+
+//add new content
+
+console.log(document.getElementsByTagName("nav"));
+
+const appendChildElement = document.createElement("a");
+appendChildElement.textContent = "Appended Child Link";
+const appendChildWhere = document.querySelector('nav');
+appendChildWhere.appendChild(appendChildElement);
+
+appendChildElement.style.color = "green";
+
+const prependElement = document.createElement("a");
+prependElement.textContent = "Prepended Link";
+const prependChildWhere = document.querySelector("nav");
+prependChildWhere.prepend(prependElement);
+
+prependElement.style.color = "green";
