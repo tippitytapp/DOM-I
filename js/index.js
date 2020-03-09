@@ -107,4 +107,5 @@ navLinksColorChanging[2].style.color = "green";
 navLinksColorChanging[3].style.color = "green";
 navLinksColorChanging[4].style.color = "green";
 navLinksColorChanging[5].style.color = "green";
-// console.log(navLinksColorChanging);
+console.log(navLinksColorChanging);
+// navLinksColorChanging.style.color = "green";
